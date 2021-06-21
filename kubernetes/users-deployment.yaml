@@ -18,4 +18,5 @@ spec:
         env: 
           - name: AUTH_ADDRESS
             # value: localhost 
-            value: '10.101.158.0'
+            # value: '10.101.158.0' # automatically generated ip address by kubernetes
+            value:  "auth-service.default" # default is default name space
