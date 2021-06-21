@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: auth-service
+spec:
+  selector:
+    app: auth
+  # type: LoadBalancer
+  type: ClusterIP  # not getting out of outside the world
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
